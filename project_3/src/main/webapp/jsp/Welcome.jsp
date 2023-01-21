@@ -8,8 +8,9 @@
 <style>
 body {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/Wlcm.jpg');
-	background-size: 100%;
+	background-size: cover;
 	 background-repeat: no-repeat;
+	
 	 
 }
 

@@ -35,6 +35,9 @@ i.css {
 .p4{
 background-image: url('<%=ORSView.APP_CONTEXT%>/img/timetable.jpg');
 	background-size: 100%;
+	
+	background-repeat: no-repeat;
+	
 }
 
 <%-- .hm-gradient {
@@ -63,7 +66,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/timetable.jpg');
 							<%
 								long id = DataUtility.getLong(request.getParameter("id"));
 
-								if (dto.getId()!=null) {
+								if (dto.getId()!=null&&id>0) {
 							%>
 							<h3 class="text-center text-primary">Update Time Table</h3>
 							<%
@@ -196,7 +199,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/timetable.jpg');
 
 							</br>
 							<%
-								if (id>0) {
+								if (dto.getId()!=null) {
 							%>
 							<div class="text-center">
 								<input type="submit" name="operation"

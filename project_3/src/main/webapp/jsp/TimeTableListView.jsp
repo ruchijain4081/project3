@@ -21,6 +21,7 @@
 .hm {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/bground.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 .p1{
 padding: 8px;

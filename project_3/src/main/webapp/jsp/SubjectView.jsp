@@ -63,7 +63,7 @@ padding-bottom: 11px;
 							  long id=DataUtility.getLong(request.getParameter("id"));
 							
 							
-							if (dto.getId()!=null)  {
+							if (dto.getId()!=null&&id>0)  {
 							%>
 							<h3 class="text-center  text-primary">Update Subject</h3>
 							<%
@@ -153,7 +153,7 @@ padding-bottom: 11px;
 	
 
 							<%
-								if (id>0) {
+								if (dto.getId()!=null) {
 							%>
 							<div class="text-center">
 

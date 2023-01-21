@@ -137,7 +137,7 @@ i.css {
 	<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("lastName", request)%></font></br>		
 	
 								<%
-								if (id <=0) {
+								if (dto.getId()==null) {
 								%>
 
                                <span class="pl-sm-5"><b>Password</b>
@@ -233,7 +233,7 @@ i.css {
     </div>	
 	<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("dob", request)%></font></br>
 					<%
-							if (id >0) {
+							if (dto.getId()!=null) {
 							%>
 
 							<div class="text-center">

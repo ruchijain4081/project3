@@ -23,6 +23,7 @@
 .p4{
 background-image: url('<%=ORSView.APP_CONTEXT%>/img/bgggggggg.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 </style>

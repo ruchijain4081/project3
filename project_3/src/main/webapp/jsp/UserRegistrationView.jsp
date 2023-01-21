@@ -52,6 +52,7 @@ background-color: #ebebe0;
 .p4{
 background-image: url('<%=ORSView.APP_CONTEXT%>/img/userregview.jpg');
 	background-size: 100%;
+	backgroung-repeat:no repeat;
 }
 
 </style>

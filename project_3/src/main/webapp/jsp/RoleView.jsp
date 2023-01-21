@@ -28,7 +28,7 @@ i.css {
 }
 .p4{
 background-image: url('<%=ORSView.APP_CONTEXT%>/img/roleeeeee.jpg');
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -53,7 +53,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/roleeeeee.jpg');
 							<%
 								long id = DataUtility.getLong(request.getParameter("id"));
 
-								if (dto.getId()!=null) {
+								if (dto.getId()!=null&&id>0) {
 							%>
 
 							<h3 class="text-center text-primary font-weight-bold">Update
@@ -145,7 +145,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/roleeeeee.jpg');
 							</div>
 							</br> </br>
 							<%
-								if (id > 0) {
+								if (dto.getId()!=null) {
 							%>
 							<div class="text-center">
 

@@ -21,7 +21,7 @@ i.css {
 }
 .p4{
 background-image: url('<%=ORSView.APP_CONTEXT%>/img/corseeeee.jpg');
-	background-size: 100%;
+	background-size: cover;
 	class= "img-responsive";
 	background-repeat: no-repeat;
 }
@@ -50,7 +50,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/corseeeee.jpg');
 							  long id=DataUtility.getLong(request.getParameter("id"));
 							
 							
-							if (dto.getId()!=null)  {
+							if (dto.getId()!=null&&id>0)  {
 							%>
 							<h3 class="text-center default-text text-primary">Update Course</h3>
 							<%
@@ -148,7 +148,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/corseeeee.jpg');
     </div>
 							</br>
 							<%
-								if(id>0) {
+								if(dto.getId()!=null) {
 							%>
 							<div class="text-center">
 
